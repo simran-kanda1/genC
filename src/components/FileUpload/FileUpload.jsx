@@ -114,6 +114,7 @@ const FileUpload = ({ onLogout }) => {
     try {
       const zip = new JSZip();
       const folder = zip.folder("modified_files");
+
       const downloadPromises = Object.keys(finalDownloadURLs).map(async (fileName) => {
         const response = await fetch(finalDownloadURLs[fileName]);
         if (!response.ok) {
