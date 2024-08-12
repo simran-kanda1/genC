@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
   const [errorMessage, setErrorMessage] = useState("");
 
   const handleLogin = () => {
-    const user = { email: "generations1", password: "genC1" }; // Replace with your credentials
+    const user = { email: "generations1", password: "generations" }; // Replace with your credentials
     if (email === user.email && password === user.password) {
       onLogin(user.email);
     } else {
