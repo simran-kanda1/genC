@@ -1,0 +1,39 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.8.0",
+    "@google-cloud/storage": "^7.11.2",
+    "adm-zip": "^0.5.14",
+    "archiver": "^7.0.1",
+    "cloudmersive-convert-api-client": "^2.8.0",
+    "docx": "^8.5.0",
+    "firebase-admin": "^12.2.0",
+    "firebase-functions": "^5.0.1",
+    "fs-extra": "^11.2.0",
+    "jszip": "^3.10.1",
+    "libreoffice": "^0.4.5",
+    "openai": "^4.52.0",
+    "pdf-lib": "^1.17.1",
+    "pptxgenjs": "^3.12.0",
+    "unzipper": "^0.12.1",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/adm-zip": "^0.5.5",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
